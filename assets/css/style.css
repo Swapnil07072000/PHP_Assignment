@@ -1,0 +1,135 @@
+#inputPage {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1rem 20rem 1rem 20rem;
+    border-style: solid;
+    border-radius: 1rem;
+    padding-inline: 4%;
+}
+#displayPage {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    margin: 1rem 20rem 1rem 20rem;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 0rem;
+    padding-inline: 4%;
+}
+
+#displayPage div div{
+    display: flex;
+    flex-direction: row;
+}
+#displayPage div div p {
+    padding-right: 0.2rem;
+
+}
+#displayPage #remark{
+    display: flex;
+    flex-direction: row;
+}
+.error {
+    color: red;
+}
+.errorBox {
+    border: 1px solid red !important;
+}
+#reportForm {
+    margin: 1rem 1em 1rem 1rem;
+}
+#reportForm div {
+    margin-bottom: 0.4rem;
+}
+#reportForm span.requiredField {
+    color: red;
+}
+#reportForm div input#student_id {
+    width: 20%;
+}
+#reportForm #subjects {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem;
+    display: flex;
+    border-style: dashed;
+    border-radius: 1rem;
+    padding-inline: 8%;
+}
+textarea {
+    resize: none;
+}
+#displayPage div#title{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 1280px) {
+    #inputPage {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 30% 0% 30% 0%;
+        border-style: solid;
+        border-radius: 1rem;
+        padding-inline: 1%;
+        width: 100%;
+        display: block;
+    }
+    #displayPage {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 0.7rem;
+        margin: 30% 0% 30% 0%;
+        border-style: solid;
+        border-width: thin;
+        padding-inline: 3%;
+        width: 100%;/*109vmin;*/
+        display: block;
+    }
+    #displayPage div{ 
+        display: block;
+        flex-direction: row;
+    }
+    #displayPage #title{
+        display: flex;
+        justify-content: center;
+    }
+    #displayPage div.row table{
+        margin: 0rem 0rem 2% 1rem;
+        width: 91%;
+    }
+    #displayPage #grade{
+        margin: 0rem 0rem 0rem 0rem;
+        display: flex;
+        flex-direction: row;
+    }
+    #displayPage #remark{
+        margin: 0rem 0rem 0rem 0rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .error {
+        font-size: 0.7rem;
+        color: red;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #reportForm {
+        margin: 1rem 3em 1rem 1rem;
+    }
+    #reportForm div div {
+        display: block;
+        flex-direction: row;
+    }
+    #reportForm div{
+        display: block;
+        flex-direction: column;
+    }
+    #reportForm div input#student_id {
+        width: 30%;
+    }
+    #reportForm #subjects {
+        margin-top: 1rem;
+    }
+    #reportForm div#subjects div.row div.col div.row div.col div.row{
+        display: flex;
+    }
+    #reportForm div#subjects div.row div.col div.row div.col div.row div {
+        flex: 1;
+    }
+}
